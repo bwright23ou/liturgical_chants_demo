@@ -1,4 +1,62 @@
-/* 
-    Put your custom SCSS here! 
-    This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
-*/
+/* Typography */
+body {
+  font-family: 'Georgia', serif;
+  color: #1a1a1a;
+  background-color: #fdfdfc;
+}
+
+/* Header and Navigation */
+header, .navbar, .site-title {
+  background-color: #12345b; /* Deep blue */
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+}
+
+.navbar a,
+.site-title a {
+  color: #ffffff;
+}
+
+.navbar a:hover {
+  color: #d6b98c; /* Tan accent */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif;
+  color: #12345b; /* Deep blue */
+}
+
+/* Buttons and search bar */
+button,
+input[type="submit"],
+input[type="search"] {
+  font-family: 'Georgia', serif;
+  background-color: #d6b98c; /* Tan */
+  color: #000000;
+  border: none;
+  padding: 0.5em 1em;
+}
+
+input[type="search"] {
+  background-color: #ffffff;
+  border: 2px solid #d6b98c;
+  color: #000000;
+}
+
+/* Links */
+a {
+  color: #12345b; /* Deep blue */
+}
+
+a:hover {
+  color: #967a44; /* Darker tan for hover */
+}
+
+/* Footer */
+footer {
+  background-color: #12345b; /* Deep blue */
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+}
+
