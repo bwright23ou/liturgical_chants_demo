@@ -1,62 +1,67 @@
-/* Typography */
+// Color Variables
+$deep-blue: #12345b;
+$white: #ffffff;
+$tan: #d6b98c;
+$dark-tan: #967a44;
+$black: #1a1a1a;
+$off-white: #fdfdfc;
+
+// Font Variable
+$serif-font: 'Georgia', serif;
+
 body {
-  font-family: 'Georgia', serif;
-  color: #1a1a1a;
-  background-color: #fdfdfc;
+  font-family: $serif-font;
+  color: $black;
+  background-color: $off-white;
 }
 
-/* Header and Navigation */
-header, .navbar, .site-title {
-  background-color: #12345b; /* Deep blue */
-  color: #ffffff;
-  font-family: 'Georgia', serif;
+header,
+.navbar,
+.site-title {
+  background-color: $deep-blue;
+  color: $white;
+  font-family: $serif-font;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $tan;
+    }
+  }
 }
 
-.navbar a,
-.site-title a {
-  color: #ffffff;
-}
-
-.navbar a:hover {
-  color: #d6b98c; /* Tan accent */
-}
-
-/* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Georgia', serif;
-  color: #12345b; /* Deep blue */
+  font-family: $serif-font;
+  color: $deep-blue;
 }
 
-/* Buttons and search bar */
 button,
 input[type="submit"],
 input[type="search"] {
-  font-family: 'Georgia', serif;
-  background-color: #d6b98c; /* Tan */
-  color: #000000;
+  font-family: $serif-font;
+  background-color: $tan;
+  color: black;
   border: none;
   padding: 0.5em 1em;
 }
 
 input[type="search"] {
-  background-color: #ffffff;
-  border: 2px solid #d6b98c;
-  color: #000000;
+  background-color: $white;
+  border: 2px solid $tan;
+  color: black;
 }
 
-/* Links */
 a {
-  color: #12345b; /* Deep blue */
+  color: $deep-blue;
+
+  &:hover {
+    color: $dark-tan;
+  }
 }
 
-a:hover {
-  color: #967a44; /* Darker tan for hover */
-}
-
-/* Footer */
 footer {
-  background-color: #12345b; /* Deep blue */
-  color: #ffffff;
-  font-family: 'Georgia', serif;
+  background-color: $deep-blue;
+  color: $white;
+  font-family: $serif-font;
 }
-
